@@ -13,13 +13,14 @@ lossy_cavity_with_BN
 
 % Set up some fixed values
 a = 1.068/2*2.54e-2;
-fr = 8.00e9;
+%fr = 8.00e9;
+fr = 8e9;
 om = 2*pi*fr;
 d = 1.266*2.54e-2;
 %d = 1.4*2.54e-2;
 
 % Set up and solve functional 
-f0 = [0.008,0.008];
+f0 = [0.009,0.009];
 
 options = optimoptions('fsolve','Display','iter','TolFun',1e-16,'TolX',1e-16);
 %fsolve(@(X)[Ysys_ll(om,a,X(1),d,X(2)),Ysys_l(om,a,X(1),d,X(2))-1],f0,options)

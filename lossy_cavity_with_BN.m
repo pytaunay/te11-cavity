@@ -42,4 +42,3 @@ Ysys_ll = @(om,a,r,d,t) 1./(1i*Xi(om,a,r)) + 1./Zb_ll(om,a,d,t);
 % ... lossy
 Ysys_l = @(om,a,r,d,t)  1./(1i*Xi(om,a,r)) + 1./Zb(om,a,d,t);
 
-
